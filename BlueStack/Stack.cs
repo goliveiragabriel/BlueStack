@@ -57,7 +57,7 @@ namespace BlueStack
             var result = _items.Pop();
             if (result == _minimum )
                 _minimum = _items.Pop();
-            // Caso pop() do ultimo elemento da pilha, apenas para manter 
+            // Caso pop() do ultimo elemento da pilha, apenas para manter menor valor atual
             if (!_items.Any())
                 _minimum = default(int);
             return result;
